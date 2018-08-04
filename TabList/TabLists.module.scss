@@ -1,0 +1,72 @@
+.tabLists {
+    z-index: 1000;
+    margin: 0 auto;
+    width: 3.75rem;
+    height: 0.45rem;
+    overflow-y: hidden;
+    background-color: #FF722C;
+}
+.tabBlock {
+    background-color: #FF722C;;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 0.51rem;
+    > div.innerTabLists {
+        height: .45rem;
+        background-color: inherit;
+        position: relative;
+        min-width: 3.75rem;
+        .tabItems {
+            display: flex;
+            flex-wrap: nowrap;
+            > div {
+                display: inline-block;
+                flex-shrink: 0;
+                padding: 0 .11rem; 
+                height: 0.43rem;
+                text-align: center;
+                line-height: 0.2rem;
+                p {
+                    min-width: 0.44rem;
+                    height: 0.16rem;
+                    font-size: .11rem;
+                    text-align: center;
+                    margin: auto;
+                    font-weight: normal;
+                }
+                div {
+                    width: 0.57rem;
+                    line-height: 0.23rem;
+                    font-size: .17rem;
+                    text-align: center;
+                    margin: auto;
+                    font-weight: bold;
+                    margin-top: -0.01rem;
+                }
+                span {
+                    line-height: .21rem;
+                    padding-top: .14rem;
+                    padding-bottom: .08rem; 
+                    display: inline-block;
+                    color: white;
+                    font-size: .15rem;
+                }
+            }
+        }  
+    }
+}
+
+.activeTab span{
+    font-weight: 700;
+}
+
+.borderAni{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.02rem;
+    transition: transform 0.3s;
+    background-color: white;
+    margin: 0 .11rem;
+    box-sizing: content-box;
+}
