@@ -15,3 +15,7 @@ activeTab={activeTab}
 setActiveTab={setActiveTab}
 isAnimation={true}
 />
+```
+
+## 效果图
+![](https://github.com/LajiYang/TabLists/blob/master/IMG_3464.PNG)
